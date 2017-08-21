@@ -15,7 +15,7 @@ public class NewJobSelectionPage extends LoginPage
 
 
     public void enterNameOfItem(){     String name=UUID.randomUUID().toString();
-        driver.findElement(itemName).sendKeys(name);
+        driver.findElement(itemName).sendKeys("This is a Test "+name);
     }
     public void clickOnJobType(){
         driver.findElement(jobType).click();
